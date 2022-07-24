@@ -73,3 +73,22 @@ typealias Predicate<T> = (T) -> Boolean
 fun <T> isPredicateTrueForValue(predicate: Predicate<T>, value: T) : Boolean {
     return predicate(value)
 }
+
+// Data Classes
+
+enum class WEAPON {
+    SWORD, AXE, WAND
+}
+
+data class Hero(val weapons: List<WEAPON>, val name: String, val zeClass: String?)
+
+fun funWithHeroes(){
+    val gandalf = Hero(listOf( WEAPON.WAND), "Gandalf the grey", "Wizard")
+
+    val betterGandalf = gandalf.copy(name = "Gandalf the white")
+
+    println(betterGandalf)
+    val (weapon, name, zeClass) = betterGandalf
+    println("$name, $weapon, $zeClass")
+
+}

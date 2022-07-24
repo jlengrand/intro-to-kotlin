@@ -35,3 +35,9 @@ fun doThings(){
     a = 6
 //    b = 7
 }
+
+// String interpolation
+
+fun printNameAndAge(name: String, age: Int){
+    println("Name $name and Age $age")
+}
