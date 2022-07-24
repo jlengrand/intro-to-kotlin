@@ -11,8 +11,8 @@ fun playingWithNulls(){
     println(maybeSquare?.length)
     // bob?.department?.head?.name
 
-    val l: Int = if (maybeSquare != null) maybeSquare.length else -1
-    val betterl = maybeSquare?.length ?: -1
+//    val l: Int = if (maybeSquare != null) maybeSquare.length else -1
+//    val betterl = maybeSquare?.length ?: -1
 
     val nullableList: List<Int?> = listOf(1, 2, null, 4)
 }
